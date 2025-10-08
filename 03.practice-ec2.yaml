@@ -8,7 +8,7 @@
     domain_name: "msdevsecops.fun"
     # we can pass instances through command line using -e
     instances: 
-    # - mongodb
+    - mongodb
     - frontend
     # - redis
     # - mysql
