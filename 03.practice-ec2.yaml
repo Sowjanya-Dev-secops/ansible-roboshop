@@ -25,5 +25,5 @@
     register: "{{ ec2-output }}"
 
   - name: print the ec2 output
-    ansible.builtin.output:
-     msg: "{{ ec2_output }}"
+    ansible.builtin.debug:
+      msg: "{{ ec2_output }}"
