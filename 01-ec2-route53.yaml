@@ -7,8 +7,10 @@
     zone_id: "Z09288351F1RG63CMSZ8A"
     domain_name: "msdevsecops.fun"
     instances:
-    - mongodb
-    - redis
+    # - mongodb
+    # - redis
+    - mysql
+    - rabbitmq
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
