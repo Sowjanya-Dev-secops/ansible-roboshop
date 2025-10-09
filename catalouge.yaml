@@ -62,4 +62,9 @@
 
   - name: print catalouge_output
     ansible.builtin.debug:
-      msg: "{{catalouge_output}}"
+      msg: "{{ catalouge_output }}"
+
+  - name: load product into mongodb
+    ansible.builtin.shell: mongosh --host mongodb.msdevsecops.fun </app/db/master-data.js
+       
+      
