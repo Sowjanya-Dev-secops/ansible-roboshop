@@ -68,4 +68,8 @@
     ansible.builtin.shell: mongosh --host mongodb.msdevsecops.fun </app/db/master-data.js
     when: catalouge_output.stdout | int < 0
        
-      
+  - name: start and enable the catalouge
+    ansible.builtin.service:
+      name: catalouge
+      state: started
+      enabled: yes
