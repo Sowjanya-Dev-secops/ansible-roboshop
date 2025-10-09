@@ -66,5 +66,6 @@
 
   - name: load product into mongodb
     ansible.builtin.shell: mongosh --host mongodb.msdevsecops.fun </app/db/master-data.js
+    when: catalouge_output.stdout | int < 0
        
       
