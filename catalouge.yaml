@@ -62,4 +62,4 @@
 
   - name: print catalouge_output
     ansible.builtin.debug:
-      msg: "catalouge_output"
+      msg: "{{catalouge_output}}"
