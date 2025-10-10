@@ -3,12 +3,16 @@
   connection: local
   vars:
     ami_id: ami-09c813fb71547fc4f
-    sg_id: sg-07c8acf3fa6b923fa # replace with your SG ID
-    zone_id: "Z0948150OFPSYTNVYZOY" # replace with your ID
-    domain_name: "daws86s.fun"
+    sg_id: sg-0696dc92e81135eee
+    zone_id: "Z09288351F1RG63CMSZ8A"
+    domain_name: "msdevsecops.fun"
+    # ami_id: ami-09c813fb71547fc4f
+    # sg_id: sg-07c8acf3fa6b923fa # replace with your SG ID
+    # zone_id: "Z0948150OFPSYTNVYZOY" # replace with your ID
+    # domain_name: "daws86s.fun"
     # we can pass instances through command line using -e
-    instances: 
-    - frontend
+    # instances: 
+    # - frontend
     # - mongodb
     # - redis
     # - mysql
