@@ -40,7 +40,7 @@
       path: /etc/nginx/nginx.conf
 
   - name: copy nginx conf
-    asible.builtin.file:
+    ansible.builtin.file:
       src: nginx.conf
       dest: /etc/nginx/nginx.conf
 
