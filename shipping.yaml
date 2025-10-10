@@ -18,7 +18,7 @@
     - cryptography
     - PyMySQL
 
-  - name: add application cart
+  - name: create system user roboshop
     ansible.builtin.user:
       name: roboshop
       comment: roboshop system cart
