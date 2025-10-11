@@ -13,7 +13,7 @@
      name: nodejs
      state: present
   
-  - name: add application cart
+  - name: create roboshop system user 
     ansible.builtin.user:
       name: roboshop
       comment: roboshop system cart
@@ -45,11 +45,12 @@
     ansible.builtin.unarchive:
      src: /tmp/cart.zip
      dest: /app
+     args:
+      chdir: /app
      remote_src: yes
 
   - name: Install dependencies
     community.general.npm:
-     #name: npm
      path: /app
 
   - name: copy cart service
