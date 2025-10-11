@@ -55,7 +55,7 @@
   - name: install dependencies
     ansible.builtin.command: mvn clean package
     args:
-      chdir: /apps
+      chdir: /app
 
   - name: move jar files
     ansible.builtin.command: mv target/shipping-1.0.jar shipping.jar
