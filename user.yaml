@@ -1,5 +1,5 @@
 - name: setup user server
-  hosts: user.msdevsecops.fun
+  hosts: user
   become: yes
   tasks:
   - name: disable nodejs
@@ -28,10 +28,11 @@
 
   - name: Create app directory 
     ansible.builtin.file:
-     path: /app
      state: directory
+     path: /app
+     
 
-  - name: delete catalouge file (delete file)
+  - name: delete user file (delete file)
     ansible.builtin.file:
       path: /tmp/user.zip
       state: absent
